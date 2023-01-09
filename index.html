@@ -63,7 +63,7 @@ img {width: 100vw}
 
 </br>
 
-<div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+<div class="card text-bg-danger mb-3" style="max-width: 18rem;" id="card1">
 
   <div class="card-body">
     <h5 class="card-title">
@@ -141,6 +141,18 @@ onclick="location.href='https://docs.google.com/document/d/1VX3csnAoXpTe8_Rx58DH
         .then(function() { console.log("Service worker registrado"); });
     }
 
+	  
+	  
+let p = document.getElementById("card1"); // Encuentra el elemento "p" en el sitio
+  p.onclick = redirige1; // Agrega función onclick al elemento
+    
+  function redirige1(evento) {
+    window.location.href = "https://www.google.com";
+  }
+	  
+	  
+	  
+	  
     </script>
 
   </body>
